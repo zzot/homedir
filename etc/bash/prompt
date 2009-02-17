@@ -21,7 +21,7 @@ PS1="${PS1} ${pyellow}\w${preset}"
 
 
 # if not my regular user, show username
-[ "`echo -n $USER | sed -e 's/carlo//ig'`" = "" ] && PS1="${pred}\u${preset}@${PS1}"
+[ "`echo -n $USER | sed -e 's/carlo//ig'`" != "" ] && PS1="${pred}\u${preset}@${PS1}"
 
 
 # if we can edit the title of the terminal, do so
