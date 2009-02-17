@@ -14,14 +14,14 @@ case $HOST in
         ;;
     *)
         # basic prompt
-        PS1="${pwhite}${HOST}${preset}"
+        PS1="${pblue}${HOST}${preset}"
         ;;
 esac
 PS1="${PS1} ${pyellow}\w${preset}"
 
 
 # if not my regular user, show username
-[ $USER != 'Carlo' ] && PS1="${pred}\u${preset}@${PS1}"
+[ "`echo -n $USER | sed -e 's/carlo//ig'`" = "" ] && PS1="${pred}\u${preset}@${PS1}"
 
 
 # if we can edit the title of the terminal, do so
