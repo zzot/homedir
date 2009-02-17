@@ -21,11 +21,17 @@ export LC_ALL=de_DE.UTF-8
 
 
 # MySQL path on OS X
-[ -x /usr/local/mysql/bin ]         && PATH="/usr/local/mysql/bin:${PATH}"
+[ -x /usr/local/mysql/bin ]       && PATH="/usr/local/mysql/bin:${PATH}"
 
 
 # MacPorts stuff - currently compiled to /usr/local/ports
 [ -x /usr/local/ports/bin ]       &&  PATH="/usr/local/ports/bin:${PATH}"
+
+
+# Moar paths, MOAR
+[ -x /opt/local/bin ]             && export PATH="/opt/local/bin:${PATH}"
+[ -x /opt/local/sbin ]            && export PATH="/opt/local/sbin:${PATH}"
+
 
 # manpath is currently only edited here, so just export it
 [ -x /usr/local/ports/share/man ] && export MANPATH="/usr/local/ports/share/man:${MANPATH}"
