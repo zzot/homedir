@@ -13,7 +13,7 @@ hostname=`scutil --get LocalHostName`
 # pretty colours in BSD style
 export LSCOLORS=dxfxcxdxbxegedabagacad
 
-alias      ls='ls -FG'
+alias      ls='ls -alFG'
 
 
 # Locale

@@ -8,7 +8,7 @@ alias      f.='find .'
 alias     fgr='find . | grep -i'
 alias     fgx='find . -print0 | xargs -0 grep -i'
 
-alias      ll='ls -la'
+alias      ll='ls -la --group-directories-first'
 
 alias   mkdir='mkdir -p'
 
