@@ -4,8 +4,6 @@
 
 export  EXINIT="set sh=/bin/sh sw=4 ai redraw report=2"
 
-export  LC_CTYPE='de_DE.UTF-8'
-
 export  EDITOR=vim
 
 # Check the window size after each command and,
