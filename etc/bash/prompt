@@ -10,11 +10,11 @@ case $HOST in
         ;;
     charpool*)
         # live hostname
-        PS1="${pbgred}${HOST}${preset}"
+        PS1="${pblue}${HOST}${preset}"
         ;;
     *)
         # basic prompt
-        PS1="${pcyan}${HOST}${preset}"
+        PS1="${pwhite}${HOST}${preset}"
         ;;
 esac
 PS1="${PS1} ${pyellow}\w${preset}"
