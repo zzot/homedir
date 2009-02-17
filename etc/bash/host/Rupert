@@ -1,0 +1,3 @@
+# ~/etc/bash/host/Rupert
+
+[ -x ${HOME}/bin/textmate ]     && export VISUAL="${HOME}/bin/textmate"

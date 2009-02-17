@@ -11,7 +11,9 @@ endif
 set nomodeline
 set showmatch
 set title
-set noautoindent
+set cindent
+set number
+set autoindent
 set nosmartindent
 
 " i18n friendly

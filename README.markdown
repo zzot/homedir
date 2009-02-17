@@ -1,20 +1,12 @@
-home directory
-==============
+# home directory
 
-Files from my home directory (work, laptop and shared hosting) which 
-are open to anyone to investigate and learn from.
+Files from my home directory (work, laptop and shared hosting). Forked from
+[Brad](http://github.com/bradleywright/homedir/tree) who forked it from
+[Norm](http://github.com/norm/homedir/tree). Thanks to both of them.
 
 
-Philosophy
-----------
-There have been countless times in my life that I've learned something
-new (whether it is a programming technique, time saving shortcut, or just 
-a random useful tip) from seeing people's "secret software". I figured I'd
-share mine too.
+## The Idea
 
-See also
---------
-* http://www.jwz.org/hacks/marginal.html
-* http://simon-cozens.org/programmer/secret-software.html
-
+One homedir git repo for all my machines. Depending on OS and machine, different
+files are used and executed.
 

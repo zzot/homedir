@@ -1,0 +1,6 @@
+# ~/etc/bash/rc/ruby
+# 
+# Ruby specific settings
+
+export RI="--format bs"
+export RUBYOPT=rubygems

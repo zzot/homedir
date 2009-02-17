@@ -1,5 +1,3 @@
-# ~/etc/bash/host/coopers
+# ~/etc/bash/host/Cortana
 
 [ -x ${HOME}/bin/textmate ]     && export VISUAL="${HOME}/bin/textmate"
-
-export TM_PYCHECKER=pylint
