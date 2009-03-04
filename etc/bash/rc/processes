@@ -1,0 +1,5 @@
+# ~/etc/bash/rc/processes
+#
+# process-related shenanigans
+
+pidof () { ps ax | egrep -i $@ | awk '{print $1}'; }
