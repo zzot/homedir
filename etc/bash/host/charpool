@@ -1,4 +1,4 @@
 # ~/etc/bash/host/charpool
 
-export RAILS_ENV=production
+export RAILS_ENV="production"
 
