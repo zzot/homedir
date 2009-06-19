@@ -31,7 +31,8 @@ export LC_ALL=de_DE.UTF-8
 # Moar paths, MOAR
 [ -x /opt/local/bin ]             && export PATH="/opt/local/bin:${PATH}"
 [ -x /opt/local/sbin ]            && export PATH="/opt/local/sbin:${PATH}"
-
+[ -x /usr/local/sbin ]            && export PATH="/usr/local/sbin:${PATH}"
+[ -x /usr/local/bin ]             && export PATH="/usr/local/bin:${PATH}"
 
 # manpath is currently only edited here, so just export it
 [ -x /usr/local/ports/share/man ] && export MANPATH="/usr/local/ports/share/man:${MANPATH}"
