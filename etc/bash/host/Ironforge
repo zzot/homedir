@@ -12,3 +12,6 @@ alias hero="ssh root@87.230.19.4";
 alias aso="ssh carlo@isabel.asmallorange.com";
 
 alias cpcilo="cp /Users/Carlo/Games/World\ of\ Warcraft/Interface/Cilo.tga /Users/Carlo/Games/World\ of\ Warcraft/Interface/AddOns/PitBull/"
+
+alias mysql_stop="sudo launchctl unload -w /Library/LaunchDaemons/com.mysql.mysqld.plist"
+alias mysql_start="sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysqld.plist"
