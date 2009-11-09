@@ -34,6 +34,11 @@ export LC_ALL=de_DE.UTF-8
 [ -x /usr/local/sbin ]            && export PATH="/usr/local/sbin:${PATH}"
 [ -x /usr/local/bin ]             && export PATH="/usr/local/bin:${PATH}"
 
+
 # manpath is currently only edited here, so just export it
 [ -x /usr/local/ports/share/man ] && export MANPATH="/usr/local/ports/share/man:${MANPATH}"
 
+
+# Aliases
+alias  mysql_stop="sudo launchctl unload -w /Library/LaunchDaemons/com.mysql.mysqld.plist"
+alias mysql_start="sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysqld.plist"
