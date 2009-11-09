@@ -40,5 +40,6 @@ export LC_ALL=de_DE.UTF-8
 
 
 # Aliases
+alias          js="java -jar ~/bin/js.jar"
 alias  mysql_stop="sudo launchctl unload -w /Library/LaunchDaemons/com.mysql.mysqld.plist"
 alias mysql_start="sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysqld.plist"
