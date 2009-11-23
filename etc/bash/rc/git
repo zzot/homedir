@@ -5,5 +5,5 @@
 # put Git into man path
 export MANPATH="/usr/local/git/man:$MANPATH"
 
-alias gpush="git push origin master"
-alias gpull="git pull origin master"
+alias gpush="git push"
+alias gpull="git pull"
