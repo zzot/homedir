@@ -6,7 +6,8 @@
 case $HOST in
     Ironforge*|Cortana*)
         # fork when not at home
-        PS1="${pgreen}${HOST}${preset}"
+        # PS1="${pgreen}${HOST}${preset}"
+        PS1="${preset}"
         ;;
     charpool*|Forge*)
         # live hostname
@@ -42,5 +43,8 @@ PS1="${titlebar}${PS1}"
 [ -n "$WINDOW" ]            && PS1="${pblue}scr-${WINDOW}${preset} ${PS1}"
 
 
+# append git branch
+PS1="$PS1${blue}\$(__git_ps1)${white} "
+
 # append dollar sign
-PS1="$PS1 \$ "
+# PS1="$PS1 \$ "
