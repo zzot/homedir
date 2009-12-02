@@ -44,7 +44,7 @@ PS1="${titlebar}${PS1}"
 
 
 # append git branch
-PS1="$PS1${blue}\$(__git_ps1)${white} "
+PS1="$PS1${pcyan}\$(__git_ps1)${pwhite} "
 
 # append dollar sign
 # PS1="$PS1 \$ "
