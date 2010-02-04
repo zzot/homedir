@@ -3,3 +3,7 @@
 [user]
 	name = Carlo Zottmann
 	email = carlo@municode.de
+[alias]
+	wtf = !git-wtf
+[core]
+	autocrlf = true
