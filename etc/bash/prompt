@@ -2,7 +2,6 @@
 # 
 # set the prompt (should be done as late as possible)
 
-
 case $HOST in
     Ironforge*|Cortana*)
         # fork when not at home
