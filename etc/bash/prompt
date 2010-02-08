@@ -1,50 +1,50 @@
-# ~/etc/bash/prompt
-# 
-# set the prompt (should be done as late as possible)
+# ~/etc/bash/promp
+#
+# set the prompt (should be done as late as possible
 
 
-case $HOST in
-    Ironforge*|Cortana*)
-        # fork when not at home
-        # PS1="${pgreen}${HOST}${preset}"
-        PS1="${preset}"
-        ;;
-    charpool*|Forge*)
-        # live hostname
-        PS1="${pcyan}${HOST}${preset}"
-        ;;
-    *)
-        # basic prompt
-        PS1="${pblue}${HOST}${preset}"
-        ;;
-esac
-PS1="${PS1} ${pyellow}\w${preset}"
+case $HOST i
+    Ironforge*|Cortana*
+        # fork when not at hom
+        # PS1="${pgreen}${HOST}${preset}
+        PS1="${preset}
+        ;
+    charpool*|Forge*
+        # live hostnam
+        PS1="${pcyan}${HOST}${preset}
+        ;
+    *
+        # basic promp
+        PS1="${pblue}${HOST}${preset}
+        ;
+esa
+PS1="${PS1} ${pyellow}\w${preset}
 
 
-# if not my regular user, show username
-[ $USER != "" ] && PS1="${pred}\u${preset}@${PS1}"
+# if not my regular user, show usernam
+[ $USER != "" ] && PS1="${pred}\u${preset}@${PS1}
 
 
-# if we can edit the title of the terminal, do so
-case $TERM in
-    xterm*|rxvt*)
-        # local TITLEBAR='\[\033]0;\u@\h\007\]'
-        titlebar="${popentitle}\u@${HOST}${pclosetitle}"
-        ;;
-    *)
-        titlebar=""
-        ;;
-esac
-PS1="${titlebar}${PS1}"
+# if we can edit the title of the terminal, do s
+case $TERM i
+    xterm*|rxvt*
+        # local TITLEBAR='\[\033]0;\u@\h\007\]
+        titlebar="${popentitle}\u@${HOST}${pclosetitle}
+        ;
+    *
+        titlebar="
+        ;
+esa
+PS1="${titlebar}${PS1}
 
 
-# optional prefixes to the basic prompt
-[ -n "$prompt_prefix" ]     && PS1="${prompt_prefix} ${PS1}"
-[ -n "$WINDOW" ]            && PS1="${pblue}scr-${WINDOW}${preset} ${PS1}"
+# optional prefixes to the basic promp
+[ -n "$prompt_prefix" ]     && PS1="${prompt_prefix} ${PS1}
+[ -n "$WINDOW" ]            && PS1="${pblue}scr-${WINDOW}${preset} ${PS1}
 
 
-# append git branch
-PS1="\n$PS1${pcyan}\$(__git_ps1)${pwhite}\n➜ "
+# append git branc
+PS1="\n$PS1${pcyan}\$(__git_ps1)${pwhite}\n➜ 
 
-# append dollar sign
-# PS1="$PS1 \$ "
+# append dollar sig
+# PS1="$PS1 \$ 
