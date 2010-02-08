@@ -6,4 +6,4 @@
 [alias]
 	wtf = !git-wtf
 [core]
-	autocrlf = true
+	autocrlf = input
