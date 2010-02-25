@@ -2,14 +2,14 @@
 #
 # control history capturing
 
-export  HISTFILESIZE=10000
-export   HISTCONTROL=ignoreboth
+export HISTFILESIZE=10000
+export HISTCONTROL=ignoreboth
+export HISTIGNORE="&:ls:[bf]g:exit:history:h:.dotfiles"
 
 # date and time stamps in ISO 8601 format
 export HISTTIMEFORMAT="%FT%T "
-export HISTIGNORE="history:h:.dotfiles"
 
-alias    h='history 20'
-alias   hg='history | grep'
+alias  h='history 20'
+alias hg='history | grep'
 
 shopt -s histappend
