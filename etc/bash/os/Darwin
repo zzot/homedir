@@ -40,10 +40,6 @@ export LC_ALL=de_DE.UTF-8
 
 
 # Aliases
-alias          js="java -jar ~/bin/js.jar"
-alias      jslint="java -jar ~/bin/js.jar ~/bin/jslint.js"
-alias  jsbeautify="java -jar ~/bin/js.jar ~/bin/beautify-cl.js -d ~/bin/"
 alias  mysql_stop="sudo launchctl unload -w /Library/LaunchDaemons/com.mysql.mysqld.plist"
 alias mysql_start="sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysqld.plist"
 alias  dedrm_epub="aineptepub.py ~/Dropbox/Documents/adeptkey.der"
-alias yuicompress="java -jar ~/bin/yuicompressor-2.4.2.jar"
