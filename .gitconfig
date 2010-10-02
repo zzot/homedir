@@ -5,5 +5,6 @@
 	email = carlo@municode.de
 [alias]
 	wtf = !git-wtf
+	shlog = "log --pretty=\"%Cgreen%h%Creset – %Cred%ci%Creset – %s (%Cred%an%Creset)\""
 [core]
 	autocrlf = input
