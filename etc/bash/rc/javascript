@@ -2,7 +2,11 @@
 #
 # Javascript specific settings
 
-alias          js="java -jar ~/bin/js.jar"
-alias      jslint="java -jar ~/bin/js.jar ~/bin/jslint.js"
-alias  jsbeautify="java -jar ~/bin/js.jar ~/bin/beautify-cl.js -d ~/bin/"
+js_engine="java -jar ~/bin/js.jar"
+
+[ "${hostos}" == "Darwin" ] && js_engine="~/bin/d8-osx"
+
+alias          js="${js_engine}"
+alias      jslint="${js_engine} ~/bin/jslint.js"
+alias  jsbeautify="${js_engine} ~/bin/beautify-cl.js -d ~/bin/"
 alias yuicompress="java -jar ~/bin/yuicompressor-2.4.2.jar"
