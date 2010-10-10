@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for F in bin etc .bash_profile .bashrc .gitconfig .screenrc .vimrc; do
+for F in bin etc .bash_profile .bashrc .gitconfig .screenrc .vimrc .node_libraries; do
   SRC="${PWD}/${F}"
   DEST="${HOME}/${F}"
   echo mv "${DEST}" "${DEST}.orig"
