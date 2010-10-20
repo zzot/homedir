@@ -18,7 +18,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors
 "
-    set t_Co=256            " Use 256 colors
+    set t_Co=64            " Use 256 colors
     " syntax highlighting
     if has('syntax')
         syntax on
@@ -26,8 +26,8 @@
         filetype on
         filetype plugin on
         filetype indent on
-        set cursorline          " What line am I on?
-        colorscheme railscasts " Still deciding if I like this or not
+        " set cursorline          " What line am I on?
+        colorscheme desert
         " Syntax highlight for complext documents is a little slow.  Tweaking
         " the settings a bit to reduce the load (especially on remote
         " machines)
