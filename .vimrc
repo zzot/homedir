@@ -27,7 +27,7 @@
         filetype plugin on
         filetype indent on
         " set cursorline          " What line am I on?
-        colorscheme desert
+        colorscheme ir_black 
         " Syntax highlight for complext documents is a little slow.  Tweaking
         " the settings a bit to reduce the load (especially on remote
         " machines)
@@ -172,7 +172,7 @@
     if has('gui_running')
         set encoding=utf-8
         set lines=75
-        set columns=75
+        set columns=144
         set guifont=Monaco:h13
         set guitablabel=%t
         "set fuoptions=maxvert,maxhorz
