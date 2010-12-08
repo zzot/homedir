@@ -7,3 +7,5 @@ export RUBYOPT=rubygems
 export RDOCOPT="-S -f html -T hanna"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+rvm ruby-1.9.2-head
+
