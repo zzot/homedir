@@ -6,4 +6,7 @@ export RI="--format bs"
 export RUBYOPT=rubygems
 export RDOCOPT="-S -f html -T hanna"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+if [[ -s "$HOME/.rvm" ]]; then
+  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+  rvm ruby-1.9.2-head
+fi
