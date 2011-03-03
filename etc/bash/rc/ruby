@@ -11,7 +11,5 @@ else
   export RDOCOPT="-S -f html"
 fi
 
-if [[ -s "$HOME/.rvm" ]]; then
-  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-  rvm ruby-1.9.2
-fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
