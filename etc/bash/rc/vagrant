@@ -1,2 +1,3 @@
 alias vagrant_copy_keys="scp ~/.ssh/vagrant/id_dsa* vagrant:.ssh/"
+alias v="vagrant"
 
