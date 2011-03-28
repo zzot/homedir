@@ -27,8 +27,8 @@
         filetype plugin on
         filetype indent on
         " set cursorline          " What line am I on?
-        colorscheme ir_black 
-        " Syntax highlight for complext documents is a little slow.  Tweaking
+        colorscheme slate 
+        " syntax highlight for complext documents is a little slow.  Tweaking
         " the settings a bit to reduce the load (especially on remote
         " machines)
         set synmaxcol=500
@@ -56,6 +56,7 @@
     set showmode                    " Tell me what mode I'm in (insert/visual/etc)
     set showmatch                   " Automatically show matching brace/parens/etc.
     set number                      " Line numbers, yessir
+    set lsp=2                       " Line spacing, 's important
 
     " Helpful mappings
     nnoremap ' `                            " ` is more useful than '.  Swap them.
@@ -131,6 +132,10 @@
    
     nnoremap <silent> <leader>h :noh<CR>
 
+    "This unsets the "last search pattern" register by hitting return
+    nnoremap <CR> :noh<CR><CR>
+    
+
     " show more stuff around the cursor
     set scrolloff=3
  
@@ -173,7 +178,7 @@
         set encoding=utf-8
         set lines=75
         set columns=144
-        set guifont=Monaco:h13
+        set guifont=Menlo:h14
         set guitablabel=%t
         "set fuoptions=maxvert,maxhorz
         "au GUIEnter * set fullscreen
