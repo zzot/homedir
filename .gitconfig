@@ -8,3 +8,9 @@
 	shlog = "log --pretty=\"%Cgreen%h%Creset – %Cred%ci%Creset – %s (%Cred%an%Creset)\""
 [core]
 	autocrlf = input
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
