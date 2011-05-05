@@ -1,5 +1,6 @@
 $("#title_actions")
   .prepend("<li><a href='#' class='title_button'><span>Print</span></a></li>")
+  .find("li:first a")
   .click( function() {
     $("link[media=screen]:first").removeAttr("media");
     $("head").append("<style type='text/css'>td.bold.money, td.action, #title_actions, #transaction-legend, #mainContent > p { display: none; }</style>");
