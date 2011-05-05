@@ -1,0 +1,1 @@
+$("a[target]").removeAttr("target");
