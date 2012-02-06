@@ -45,3 +45,8 @@ fi
 [ -x /usr/local/ports/share/man ] && export MANPATH="/usr/local/ports/share/man:${MANPATH}"
 
 
+# Make sure ssh-agent is started
+if [ "x" == "x`ps -x -u ${USER} | egrep [s]sh-agent`" ] ; then
+  ssh-agent | sed -e "/^echo/d" > ${HOME}/bin/agent-env
+fi
+source ${HOME}/bin/agent-env

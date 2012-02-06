@@ -1,6 +1,8 @@
 # ~/etc/bash/rc/ruby
-# 
+#
 # Ruby specific settings
+
+eval "$(rbfu --init --auto)"
 
 export RI="--format bs"
 export RUBYOPT=rubygems
@@ -11,7 +13,5 @@ else
   export RDOCOPT="-S -f html"
 fi
 
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [ -d "$HOME/.rbfu" ] && eval "$($HOME/.rbfu/init.sh)"
 command -v rbfu &>/dev/null && rbfu 1.9.3
-

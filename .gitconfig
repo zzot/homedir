@@ -1,8 +1,8 @@
 [color]
   ui = auto
 [user]
-	name = Carlo Zottmann
-	email = carlo@municode.de
+  name = Carlo Zottmann
+  email = carlo@municode.de
 [alias]
   st = status
   ci = commit
@@ -11,16 +11,18 @@
   df = diff
   dt = difftool
   lg = log -p
-	wtf = !git-wtf
-	shlog = "log --pretty=\"%Cgreen%h%Creset – %Cred%ci%Creset – %s (%Cred%an%Creset)\""
+  wtf = !git-wtf
+  shlog = "log --pretty=\"%Cgreen%h%Creset – %Cred%ci%Creset – %s (%Cred%an%Creset)\""
   fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq' -
   vim   = ! sh -c 'vim `git fshow $1`' -
   mate  = ! sh -c 'mate `git fshow $1`' -
+  subl  = ! sh -c 'subl `git fshow $1`' -
 [core]
-	autocrlf = input
+  autocrlf = input
+  editor = subl -w
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
-	prompt = false
+  prompt = false
 [diff]
-	tool = Kaleidoscope
+  tool = Kaleidoscope

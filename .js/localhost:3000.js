@@ -1,3 +1,4 @@
+/*
 $("a[href^='txmt://']").each( function(i, elem) {
   var a = $(elem);
   a.attr(
@@ -8,5 +9,5 @@ $("a[href^='txmt://']").each( function(i, elem) {
     )
   );
 });
-
+*/
 
