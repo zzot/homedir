@@ -2,8 +2,6 @@
 #
 # Ruby specific settings
 
-eval "$(rbfu --init --auto)"
-
 export RI="--format bs"
 export RUBYOPT=rubygems
 
