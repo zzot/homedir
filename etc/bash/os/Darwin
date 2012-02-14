@@ -30,23 +30,12 @@ if [ -x /usr/local/mysql/bin ]; then
 fi
 
 
-# MacPorts stuff - currently compiled to /usr/local/ports
-[ -x /usr/local/ports/bin ]       &&  PATH="/usr/local/ports/bin:${PATH}"
-
-
-# Moar paths, MOAR
-[ -x /opt/local/bin ]             && export PATH="/opt/local/bin:${PATH}"
-[ -x /opt/local/sbin ]            && export PATH="/opt/local/sbin:${PATH}"
-[ -x /usr/local/sbin ]            && export PATH="/usr/local/sbin:${PATH}"
-[ -x /usr/local/bin ]             && export PATH="/usr/local/bin:${PATH}"
-
-
-# manpath is currently only edited here, so just export it
-[ -x /usr/local/ports/share/man ] && export MANPATH="/usr/local/ports/share/man:${MANPATH}"
+# enable bash 4 recursive globbing
+shopt -s globstar
 
 
 # Make sure ssh-agent is started
-if [ "x" == "x`ps -x -u ${USER} | egrep [s]sh-agent`" ] ; then
-  ssh-agent | sed -e "/^echo/d" > ${HOME}/bin/agent-env
-fi
-source ${HOME}/bin/agent-env
+# if [ "x" == "x`ps -x -u ${USER} | egrep [s]sh-agent`" ] ; then
+#   ssh-agent | sed -e "/^echo/d" > ${HOME}/bin/agent-env
+# fi
+# source ${HOME}/bin/agent-env
